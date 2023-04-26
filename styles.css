@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+ li{
+    list-style-type: none;
+    display: inline-block;
+     padding: 0px 30px; 
+     color: white;
+}
+.navbar{
+    display: flex;    
+}
+img{
+    height:80px;
+    width:80px;
+}
+.img{
+    height: 40px;
+    width: 40px;
+}
+.container2{
+    display:flex;
+    margin-top: 40px;
+    column-gap: 30px;
+    justify-content: space-around;
+    padding:0px 50px;
+}
+.sahara{
+    color: white;
+    height:100px;
+    width:auto;
+    text-align: center;
+    padding-top: 140px; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    height: 500px;
+    width: 80%;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.box{
+    border-radius: 20px; 
+    background-size: cover;
+    transition: 1s ;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+.explore{
+    height: 40px;
+    width:150px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 12px;
+
+}
+p{
+    line-height: 25px;
+}
+.box1{
+    background-image: url(./pic-1.png);
+}
+.box2{
+    background-image: url(./pic-2.png);
+}
+.box3{
+    background-image: url(./pic-3.png);
+}
+.box4{
+    background-image: url(./pic-4.png);
+}
+
+@media screen and (min-width:500px) and (max-width:900px)
+{
+    body{
+        background-repeat:repeat ;
+    }
+.container2{
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 80px;;
+}
+.grid{
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,260px);
+}
+.sahara{
+    padding: 0%;
+    height: auto;
+    width: auto;
+    text-align: left;
+}
+.box{
+    background-position: center;
+    background-size: cover;    
+}
+/* .box{
+    transition: 2s ;
+} */
+.box:hover{
+  transform:translateY(10px);
+}    
+.container1{
+    flex-wrap: wrap;
+}
+}
+@media screen and (min-width:280px) and (max-width:500px) {
+    
+    body{
+        background-repeat: repeat;
+    }
+    .container2{
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0px 80px;;
+
+    }
+    .sahara{
+        padding: 0%;
+        height: auto;
+        width: auto;
+        text-align: left;
+    }
+    .grid{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4,260px);
+    }
+    .box{
+        background-position: center;
+        background-size: cover;    
+    }
+    .box:hover{
+        transform:translateY(10px);
+      }   
+}
